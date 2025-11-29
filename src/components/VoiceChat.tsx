@@ -31,7 +31,7 @@ const VoiceChat: React.FC = () => {
   const transcriptionRef = useRef('');
   const historyRef = useRef<HTMLDivElement>(null);
 
-  const API_KEY = process.env.API_KEY;
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   const analyzeAudio = () => {
     if (!analyserRef.current) return;
