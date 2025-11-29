@@ -31,7 +31,6 @@ const VoiceChat: React.FC = () => {
   const transcriptionRef = useRef('');
   const historyRef = useRef<HTMLDivElement>(null);
 
-  // Utilisation de process.env pour suivre les guidelines
   const API_KEY = process.env.API_KEY;
 
   const analyzeAudio = () => {
